@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    border: 1px solid #a4a6aa;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    position: absolute;
+    cursor: grab;
+    user-select: none;
+    background-color: #303030;
+}
+
+.container_calculadora {
+    height: 17rem;
+    width: 15rem;
+    display: grid;
+    grid-template-areas: 'tela tela tela'
+                         'operadores numeros numeros';
+}
+
+
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFA247;
+    color: white;
+    width: 3.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.telinha_resultado {
+    background-color: #484848;
+    grid-area: tela;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem .4rem;
+    margin-bottom: .5rem;
+    height: 70%;
+    gap: 1rem;
+    display: flex;
+    border: 2px solid #DADCE0;
+    border-radius: 8px;
+    outline: none;
+}
+
+.input_box_calculos {
+    background-color: #484848;
+    color: white;
+    font-size: 1.3rem;
+    text-align: right;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.box_calculos_previos {
+    font-size: .8rem;
+    background-color: #484848;
+    color: white;
+    text-align: right;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.input_box_calculos:hover,
+.input_box_calculos:focus {
+    border-color: #b8babc;
+    transition: .3s ease-in-out;
+}
+
+.simbolo_operacoes {
+    grid-area: operadores;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.numeros_calculadora {
+    grid-area: numeros;
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.box_cinza_button,
+.box_cinza_button_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFA247;
+    color: white;
+    width: 3.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.box_cinza_button_number {
+    background-color: #737373;
+}
+
+.box_cinza_button:hover {
+    background-color: #f09a19;
+    transition: .2s ease-in;
+}
+
+.box_cinza_button_number:hover {
+    background-color: #5b5b5b;
+    transition: .2s ease-in;
+}

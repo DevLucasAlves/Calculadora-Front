@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <main>
+        <div id="draggableBox" class="box">
+        <div class="container_calculadora">
+            <div class="telinha_resultado">
+                <input type="text" class="box_calculos_previos" readonly onchange="obterEstadoAtual()"></input>
+                <input type="text" class="input_box_calculos">
+            </div>
+            <div class="simbolo_operacoes">
+                <p class="operadores box_cinza_button">+</p>
+                <p class="operadores box_cinza_button">-</p>
+                <p class="operadores box_cinza_button">÷</p>
+                <p class="operadores box_cinza_button">x</p>
+            </div>
+
+            <div class="numeros_calculadora">
+                <p class="number box_cinza_button_number">1</p>
+                <p class="number box_cinza_button_number">2</p>
+                <p class="number box_cinza_button_number">3</p>
+                <p class="number box_cinza_button_number">4</p>
+                <p class="number box_cinza_button_number">5</p>
+                <p class="number box_cinza_button_number">6</p>
+                <p class="number box_cinza_button_number">7</p>
+                <p class="number box_cinza_button_number">8</p>
+                <p class="number box_cinza_button_number">9</p>
+                <p class="number box_cinza_button_number">.</p>
+                <p class="number box_cinza_button_number">0</p>
+                <p class="result box_cinza_button_number">=</p>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+
+</html>
